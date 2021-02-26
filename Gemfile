@@ -21,6 +21,7 @@ group :development do
 end
 
 group :test do
+  gem 'database_cleaner'
   gem 'factory_bot_rails'
   gem 'shoulda-matchers', '~> 4.0'
 end
