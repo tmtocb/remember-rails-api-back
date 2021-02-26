@@ -10,6 +10,8 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.1'
 
 group :development, :test do
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'pry-rails'
   gem 'rspec-rails', '~> 4.0.2'
 end
