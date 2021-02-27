@@ -1,0 +1,2 @@
+class Remember < ApplicationRecord
+end
