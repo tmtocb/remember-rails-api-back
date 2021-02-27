@@ -8,4 +8,8 @@ RSpec.describe Thought, type: :model do
     it { should have_db_column(:source_id) }    
   end
 
+  describe '#validations' do
+    it { should validate_presence_of(:text) }
+  end
+
 end

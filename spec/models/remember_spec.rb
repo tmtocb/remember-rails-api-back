@@ -6,4 +6,8 @@ RSpec.describe Remember, type: :model do
     it { should have_db_column(:summary) }
   end
 
+  describe '#validations' do
+    it { should validate_presence_of(:summary) }
+  end
+
 end

@@ -8,4 +8,8 @@ RSpec.describe Source, type: :model do
     it { should have_db_column(:author_id) }
   end
 
+  describe '#validations' do
+    it { should validate_presence_of(:title) }
+  end
+
 end
