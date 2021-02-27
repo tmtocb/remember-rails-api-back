@@ -12,4 +12,8 @@ RSpec.describe Thought, type: :model do
     it { should validate_presence_of(:text) }
   end
 
+  describe '#associations' do
+    it { should belong_to(:remember) }
+    it { should belong_to(:source) }
+  end
 end

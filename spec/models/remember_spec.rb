@@ -10,4 +10,7 @@ RSpec.describe Remember, type: :model do
     it { should validate_presence_of(:summary) }
   end
 
+  describe '#associations' do
+    it { should have_many(:thoughts) }
+  end
 end
